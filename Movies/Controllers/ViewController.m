@@ -32,6 +32,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableMovies.rowHeight = UITableViewAutomaticDimension;
+    self.tableMovies.estimatedRowHeight = 100;
+    
     [self setPaginationCallback];
     
     [self setSearchDelegateCallbacks];
